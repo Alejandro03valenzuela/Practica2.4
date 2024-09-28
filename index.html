@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="index.html">FAVORITOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <h1>Selecciona una película</h1>
+        <div class="movie-list">
+            <div class="image-container" onclick="openPopup('Película 1', 'Descripción de la película 1', 'imagen.1.jpg')">
+                <img src="imagen.1.jpg" alt="Imagen 1">
+                <div class="movie-title">Película 1</div>
+                <div class="movie-genre">Acción</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 2', 'Descripción de la película 2', 'imagen.2.jpg')">
+                <img src="imagen.2.jpg" alt="Imagen 2">
+                <div class="movie-title">Película 2</div>
+                <div class="movie-genre">Comedia</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 3', 'Descripción de la película 3', 'imagen.3.jpg')">
+                <img src="imagen.3.jpg" alt="Imagen 3">
+                <div class="movie-title">Película 3</div>
+                <div class="movie-genre">Drama</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 4', 'Descripción de la película 4', 'imagen.4.jpg')">
+                <img src="imagen.4.jpg" alt="Imagen 4">
+                <div class="movie-title">Película 4</div>
+                <div class="movie-genre">Terror</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 5', 'Descripción de la película 5', 'imagen.5.jpg')">
+                <img src="imagen.5.jpg" alt="Imagen 5">
+                <div class="movie-title">Película 5</div>
+                <div class="movie-genre">Ciencia Ficción</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <!-- Películas adicionales -->
+            <div class="image-container" onclick="openPopup('Película 6', 'Descripción de la película 6', 'imagen.6.jpg')">
+                <img src="imagen.6.jpg" alt="Imagen 6">
+                <div class="movie-title">Película 6</div>
+                <div class="movie-genre">Romance</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 7', 'Descripción de la película 7', 'imagen.7.jpg')">
+                <img src="imagen.7.jpg" alt="Imagen 7">
+                <div class="movie-title">Película 7</div>
+                <div class="movie-genre">Aventura</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 8', 'Descripción de la película 8', 'imagen.8.jpg')">
+                <img src="imagen.8.jpg" alt="Imagen 8">
+                <div class="movie-title">Película 8</div>
+                <div class="movie-genre">Fantasía</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 9', 'Descripción de la película 9', 'imagen.9.jpg')">
+                <img src="imagen.9.jpg" alt="Imagen 9">
+                <div class="movie-title">Película 9</div>
+                <div class="movie-genre">Biografía</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 10', 'Descripción de la película 10', 'imagen.10.jpg')">
+                <img src="imagen.10.jpg" alt="Imagen 10">
+                <div class="movie-title">Película 10</div>
+                <div class="movie-genre">Thriller</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 11', 'Descripción de la película 11', 'imagen.11.jpg')">
+                <img src="imagen.11.jpg" alt="Imagen 11">
+                <div class="movie-title">Película 11</div>
+                <div class="movie-genre">Documental</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 12', 'Descripción de la película 12', 'imagen.12.jpg')">
+                <img src="imagen.12.jpg" alt="Imagen 12">
+                <div class="movie-title">Película 12</div>
+                <div class="movie-genre">Musical</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 13', 'Descripción de la película 13', 'imagen.13.jpg')">
+                <img src="imagen.13.jpg" alt="Imagen 13">
+                <div class="movie-title">Película 13</div>
+                <div class="movie-genre">Familiar</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 14', 'Descripción de la película 14', 'imagen.14.jpg')">
+                <img src="imagen.14.jpg" alt="Imagen 14">
+                <div class="movie-title">Película 14</div>
+                <div class="movie-genre">Histórico</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+            <img id="popup-image" src="" alt="Imagen de la película">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024. Todos los derechos reservados a mí xd.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

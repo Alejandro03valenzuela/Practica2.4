@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Color de fondo general */
+        }
+
+        header {
+            background-color: #222;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px; /* Espacio alrededor del texto */
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
+            border-radius: 5px; /* Bordes redondeados al pasar el mouse */
+        }
+
+        .movie-summary {
+            margin-top: 80px; /* Espacio para el menú fijo */
+            text-align: left;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+
+        .movie-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .movie-item img {
+            width: 150px;
+            height: auto;
+            display: inline-block;
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+
+        .movie-item h3 {
+            margin: 5px 0;
+            color: #fff; /* Color del título */
+        }
+
+        .movie-item p {
+            margin: 5px 0;
+            color: #ccc; /* Color del texto */
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="favoritos.html" onclick="showFavorites()">FAVORITOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="movie-summary">
+        <h2 style="color: #fff;">Películas Recomendadas</h2>
+        <div class="movie-item">
+            <img src="imagen.1.jpg" alt="Película 1">
+            <h3>Película 1: Acción</h3>
+            <p>Un grupo de agentes especiales se une para detener a un villano que planea desatar el caos en el mundo. Con explosiones y persecuciones trepidantes, esta película mantendrá a los espectadores al borde de sus asientos.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.2.jpg" alt="Película 2">
+            <h3>Película 2: Comedia</h3>
+            <p>Un hombre se encuentra atrapado en una serie de situaciones ridículas mientras intenta impresionar a la chica de sus sueños. Con un humor ingenioso y personajes entrañables, esta comedia es perfecta para una noche divertida.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.3.jpg" alt="Película 3">
+            <h3>Película 3: Drama</h3>
+            <p>La historia de un joven que lucha por encontrar su lugar en el mundo mientras enfrenta desafíos personales y familiares. Un viaje emocional que invita a la reflexión sobre la vida y las relaciones.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.4.jpg" alt="Película 4">
+            <h3>Película 4: Terror</h3>
+            <p>Un grupo de amigos decide pasar un fin de semana en una cabaña remota, solo para descubrir que están siendo acechados por una fuerza oscura. Esta película de terror te dejará con los nervios de punta.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.5.jpg" alt="Película 5">
+            <h3>Película 5: Ciencia Ficción</h3>
+            <p>En un futuro distópico, un grupo de rebeldes lucha contra un régimen opresor que controla la tecnología. Una mezcla de acción y ciencia ficción que explorará los límites de la humanidad.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.6.jpg" alt="Película 6">
+            <h3>Película 6: Romance</h3>
+            <p>Dos almas gemelas se cruzan en una ciudad vibrante, enfrentando obstáculos que amenazan su amor. Una historia conmovedora que explora la fuerza del amor verdadero.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.7.jpg" alt="Película 7">
+            <h3>Película 7: Aventura</h3>
+            <p>Un aventurero audaz se embarca en un viaje épico para descubrir un tesoro perdido, enfrentándose a desafíos inesperados y peligros en el camino.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.8.jpg" alt="Película 8">
+            <h3>Película 8: Fantasía</h3>
+            <p>En un mundo mágico, un joven héroe debe embarcarse en una misión para salvar a su reino de un antiguo mal. Una historia llena de criaturas fantásticas y magia.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.9.jpg" alt="Película 9">
+            <h3>Película 9: Biografía</h3>
+            <p>Una intensa exploración de la vida de Adolf Hitler, desde sus humildes comienzos hasta convertirse en uno de los líderes más controvertidos de la historia. La película ofrece una mirada profunda a su psicología y las decisiones que llevaron a la Segunda Guerra Mundial.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.10.jpg" alt="Película 10">
+            <h3>Película 10: Thriller</h3>
+            <p>Un detective debe resolver un complicado caso de asesinato mientras se enfrenta a su propio pasado oscuro. Cada giro de la trama dejará a los espectadores intrigados.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.11.jpg" alt="Película 11">
+            <h3>Película 11: Documental</h3>
+            <p>Un profundo vistazo a un fenómeno social que ha cambiado la vida de millones. Este documental ofrece una perspectiva única sobre la realidad contemporánea.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.12.jpg" alt="Película 12">
+            <h3>Película 12: Musical</h3>
+            <p>La historia de un grupo de jóvenes que persiguen sus sueños en el mundo de la música. Con números musicales vibrantes, esta película es un homenaje a la pasión y la creatividad.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.13.jpg" alt="Película 13">
+            <h3>Película 13: Familiar</h3>
+            <p>Una divertida aventura que une a una familia en un viaje inesperado. Con risas y lecciones valiosas, esta película es ideal para toda la familia.</p>
+        </div>
+        <div class="movie-item">
+            <img src="imagen.14.jpg" alt="Película 14">
+            <h3>Película 14: Histórico</h3>
+            <p>Un relato épico de eventos que dieron forma a una nación. Esta película combina drama y acción para contar la historia de valentía y sacrificio.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024. Todos los derechos reservados a mí xd.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
